@@ -1,0 +1,25 @@
+/*
+
+Create icons from SVG fragments
+Reference to sprite svg file is from .tmp folder task runner creates
+$id - id of the icon in svg sprite file
+$width - desired width of the icon you want - make sure to maintain the proportion
+$height - desired height of the icon you want - make sure to maintain the proportion
+$fill - desired color for the icon (for colors refer to styleguide and same name in variable file)
+$stroke - desired color for the icon (for colors refer to styleguide and same name in variable file)
+
+20170830: JF: SG:
+Stroke added to support IE need to have inline style:
+Fill and Stroke only work for a single color element as it's applied to all components of the element.
+
+To have multipe colors applied you need to export the svg with "inline style" settings (NOT "internal CSS"), then just pass in empty strings for the fill and stroke args.  Also be sure to note in the scss/css declaration that the fill/stroke are declared inline in the svg file.
+
+*/
+
+@mixin icon($id, $width, $height, $fill, $stroke){
+	background-image: url('../sprite.svg#'+$id);
+	width: $width;
+	height: $height;
+	fill: $fill;
+	stroke: $stroke;
+}

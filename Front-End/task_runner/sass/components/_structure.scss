@@ -1,0 +1,29 @@
+/*
+Fonts:
+font-family: Khand,Helvetica,Arial,sans-serif;
+font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+Colors:
+##c8122d; -- Red
+*/
+
+body {
+
+} // body
+
+.imacBanner-line.up {
+    transform: rotate(145deg);
+}
+.imacBanner-line.right-top {
+    left: 100%;
+    top: -2px;
+    -webkit-transform-origin: -1px 2px;
+    transform-origin: -1px 2px;
+}   
+
+@media screen and (max-width: $screen-xs) {
+}
+@media screen and (max-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-xs+1) and (max-width: $screen-sm) { 
+}

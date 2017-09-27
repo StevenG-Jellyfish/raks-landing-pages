@@ -1,0 +1,127 @@
+//
+// Variables
+// --------------------------------------------------
+
+/*
+# Jellyfish Webinar Series 
+# ibm_webinar
+        Fonts:
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto', sans-serif;
+
+        Colors:
+        #7f3f97; -- purple
+        #8bc53f; -- green
+        #1c1c1c; -- black
+        #2d2d2d; -- dark gray
+        #3c3c3c; -- text grey
+        #f1f1f1; -- light grey
+        #ffffff; -- white
+*/
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #1c1c1c !default; // "black"
+$gray-dark:              #2d2d2d !default; // dark gray
+$gray:                   #3c3c3c !default; // text gray
+$gray-text:              #3c3c3c !default; // text gray
+$gray-light:             #f1f1f2 !default; // light gray
+
+// alt gray >> grey cause I can't spell.
+$grey-base:              #1c1c1c !default; // "black"
+$grey-dark:              #2d2d2d !default; // dark gray
+$grey:                   #3c3c3c !default; // text grey
+$grey-text:              #3c3c3c !default; // text grey
+$grey-light:             #f1f1f2 !default; // light grey
+
+$brand-primary:         #7f3f97 !default; // purple
+$brand-purple:          #7f3f97 !default; // purple
+$brand-secondary:       #8bc53f !default; // green
+$brand-green:           #8bc53f !default; // green
+$brand-black:           #1c1c1c !default; // "black"
+
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            $grey-text !default;
+
+//** Global textual link color.
+$link-color:            $brand-secondary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $brand-primary !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          18px !default;
+$font-size-callout:       ceil(($font-size-base * 2.167)) !default; // ~39px
+$font-size-xlarge:        ceil(($font-size-base * 1.167)) !default; // ~21px
+$font-size-large:         ceil(($font-size-base * 1.056)) !default; // ~19px
+$font-size-small:         ceil(($font-size-base * 0.778)) !default; // ~15px
+$font-size-xsmall:        ceil(($font-size-base * 0.778)) !default; // ~14px
+
+/*LT-font-size*/
+$mobile-font-size-base : 15px; //just change this value to desired mobile base font size
+
+$outline:       1px solid red;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
