@@ -46,7 +46,8 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(postcss( plugins ))
-        .pipe(sourcemaps.write('../../css'))
+        .pipe(sourcemaps.write('../css'))
+        .pipe(gulp.dest('../css'))
         .pipe(gulp.dest(css_path))
         .pipe(gulp.dest('.tmp'))
 });

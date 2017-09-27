@@ -7,23 +7,164 @@ Colors:
 ##c8122d; -- Red
 */
 
-body {
 
-} // body
 
-.imacBanner-line.up {
-    transform: rotate(145deg);
-}
-.imacBanner-line.right-top {
-    left: 100%;
-    top: -2px;
-    -webkit-transform-origin: -1px 2px;
-    transform-origin: -1px 2px;
-}   
+body.jf-landing { //new class
 
+    .imacBanner {
+        overflow: visible;
+
+        .non-standard-logo-container { //new class
+            position: relative;
+            display: block;
+            margin-top: -45px; 
+
+            .navbar-brand {
+                background-size: 100% 100%;
+            }
+        } //.non-standard-logo-container
+
+        .imacBanner-textRow {
+            position: relative;
+            width: 65%;
+            margin-top: 85px; 
+
+            .imacBanner-headline {
+                font-size: 48px !important;
+                font-weight: 600;
+            } //.imacBanner-headline
+        } //.imacBanner-textRow
+    } //.imacBanner
+
+    .imacBanner-line.up { //new class
+        transform: rotate(135deg);
+
+        &.right-top { //new class
+            left: 100%;
+            top: -5px;
+            -webkit-transform-origin: -1px 2px;
+            transform-origin: 1px 2px;
+        } //&.right-top
+
+        &.left-bottom {
+            left: -2px;
+            top: 100%;
+            -webkit-transform-origin: 1px 0;
+            transform-origin: 1px 1px;
+        } //&.left-bottom
+    } //.imacBanner-line.up
+
+    .banner-content-container { //new class
+        position: relative;
+        overflow: visible;
+
+        ul {
+            width: 60%;
+            margin-left: 10px;
+
+            h3 {
+                margin-top: 25px;
+                margin-left: -25px;
+                font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 22px !important;
+                font-weight: 700;
+                color: #fff;
+            } //h3
+
+            li {
+                font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 14px !important;
+                font-weight: 400;
+                color: #fff;
+            } //li
+        } //ul
+
+        a { 
+            font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px !important;
+            font-weight: 700;
+            text-decoration: underline;
+            color: #c8122d;
+        } //a
+
+        .modal {
+            position: absolute;
+            display: block;
+            overflow: visible !important;
+            top: -35px;
+            left: 65%;
+            right: 0px;
+            width: 370px !important;
+            z-index: 1050;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+
+            .modal-dialog,
+            .modal-content,
+            .modal-body {
+                max-width: 370px;
+            }
+
+            form {
+                font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                color: #2a2a2a;
+                label { 
+                    display: none;
+                } //label
+
+                input::placeholder,
+                textarea::placeholder {
+                    color: #2a2a2a;                    
+                } //form elements ::placeholder text
+               
+                .g-recaptcha {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                } //.g-recaptcha
+               
+                .form-actions {
+                    
+                    input[type="submit"] {
+                        width: 100%;
+                    } //submit
+
+                    p {
+                        text-align: center;
+                        font-size: 70%;
+
+                        a {
+                            font-size: 100%;
+                        }
+                    } //p
+                } //form-actions              
+            } //form
+        }//.modal
+    } //.banner-content-container
+
+    .bg-light-gray {
+
+        p {
+            color: #7C7C7C;
+        } //p
+    } //.bg-light-gray
+
+    .block-www-footer-menus {
+        padding: 250px 0 0 0;
+
+        .basement-copyright, 
+        .basementLp-copyright {
+            text-align: center;
+        }
+
+    }
+
+} // body.jf-landing
+
+/*
 @media screen and (max-width: $screen-xs) {
 }
 @media screen and (max-width: $screen-sm) {
 }
 @media screen and (min-width: $screen-xs+1) and (max-width: $screen-sm) { 
 }
+*/
