@@ -92,16 +92,52 @@ body.jf-landing .banner-content-container {
     body.jf-landing .banner-content-container .modal form {
       font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
       color: #2a2a2a; }
+      body.jf-landing .banner-content-container .modal form .modal-header {
+        margin: 0 0 15px 0;
+        padding: 0 0 0 0;
+        text-align: left; }
+        body.jf-landing .banner-content-container .modal form .modal-header div,
+        body.jf-landing .banner-content-container .modal form .modal-header p,
+        body.jf-landing .banner-content-container .modal form .modal-header h4 {
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          text-align: left;
+          color: #2a2a2a; }
+        body.jf-landing .banner-content-container .modal form .modal-header span.form-heading {
+          text-align: left;
+          font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 22px;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+          color: #2a2a2a; }
+        body.jf-landing .banner-content-container .modal form .modal-header span.form-subheading {
+          text-align: left;
+          font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 12px;
+          letter-spacing: -0.02em;
+          font-weight: 400;
+          color: #2a2a2a; }
       body.jf-landing .banner-content-container .modal form label {
         display: none; }
+      body.jf-landing .banner-content-container .modal form .form-item {
+        margin: 0 0 10px 0; }
+      body.jf-landing .banner-content-container .modal form .form-control {
+        height: 32px;
+        margin: 0 0 0 0;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 32px; }
       body.jf-landing .banner-content-container .modal form input::-webkit-input-placeholder,
       body.jf-landing .banner-content-container .modal form textarea::-webkit-input-placeholder {
+        font-size: 14px;
         color: #2a2a2a; }
       body.jf-landing .banner-content-container .modal form input:-ms-input-placeholder,
       body.jf-landing .banner-content-container .modal form textarea:-ms-input-placeholder {
+        font-size: 14px;
         color: #2a2a2a; }
       body.jf-landing .banner-content-container .modal form input::placeholder,
       body.jf-landing .banner-content-container .modal form textarea::placeholder {
+        font-size: 14px;
         color: #2a2a2a; }
       body.jf-landing .banner-content-container .modal form .g-recaptcha {
         margin-right: 0px;
@@ -109,19 +145,40 @@ body.jf-landing .banner-content-container {
       body.jf-landing .banner-content-container .modal form .form-actions input[type="submit"] {
         width: 100%; }
       body.jf-landing .banner-content-container .modal form .form-actions p {
-        text-align: center;
+        text-align: left;
         font-size: 70%; }
         body.jf-landing .banner-content-container .modal form .form-actions p a {
-          font-size: 100%; }
+          font-size: 70%; }
 
 body.jf-landing .bg-light-gray p {
   color: #7C7C7C; }
 
+body.jf-landing .bg-light-gray ul.logos {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style: none; }
+  body.jf-landing .bg-light-gray ul.logos li {
+    display: inline-block;
+    width: auto;
+    margin: 0 30px 0 0;
+    padding: 0 0 0 0;
+    list-style: none; }
+    body.jf-landing .bg-light-gray ul.logos li a {
+      outline: none; }
+      body.jf-landing .bg-light-gray ul.logos li a img {
+        width: auto;
+        height: 24px; }
+        body.jf-landing .bg-light-gray ul.logos li a img.ugam-logo {
+          height: 32px; }
+
 body.jf-landing .block-www-footer-menus {
-  padding: 250px 0 0 0; }
+  padding: 150px 0 0 0; }
   body.jf-landing .block-www-footer-menus .basement-copyright,
   body.jf-landing .block-www-footer-menus .basementLp-copyright {
     text-align: center; }
+    body.jf-landing .block-www-footer-menus .basement-copyright a,
+    body.jf-landing .block-www-footer-menus .basementLp-copyright a {
+      color: #ccc; }
 
 /*
 @media screen and (max-width: $screen-xs) {

@@ -108,12 +108,60 @@ body.jf-landing { //new class
             form {
                 font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
                 color: #2a2a2a;
+
+                .modal-header {
+                    margin: 0 0 15px 0;
+                    padding: 0 0 0 0;
+                    text-align: left;
+
+                    div,
+                    p,
+                    h4 {
+                        margin: 0 0 0 0;
+                        padding: 0 0 0 0;
+                        text-align: left;
+                        color: #2a2a2a;    
+                    }
+
+                    span.form-heading {
+                        text-align: left;
+                        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        letter-spacing: -0.02em;
+                        color: #2a2a2a;    
+                        
+                    }//span.form-heading
+
+                    span.form-subheading {
+                        text-align: left;
+                        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                        font-size: 12px;
+                        letter-spacing: -0.02em;
+                        font-weight: 400;
+                        color: #2a2a2a;    
+                    } //span.form-subheading
+                } //modal-header
+
                 label { 
                     display: none;
                 } //label
+                
+                .form-item {
+                    margin: 0 0 10px 0;
+                } //.form-item
+
+                .form-control {
+                    height: 32px;
+                    margin: 0 0 0 0;
+                    padding: 6px 12px;
+                    font-size: 14px;
+                    line-height: 32px;
+                } //.form-control
 
                 input::placeholder,
                 textarea::placeholder {
+                    font-size: 14px;
                     color: #2a2a2a;                    
                 } //form elements ::placeholder text
                
@@ -129,12 +177,12 @@ body.jf-landing { //new class
                     } //submit
 
                     p {
-                        text-align: center;
+                        text-align: left;
                         font-size: 70%;
 
                         a {
-                            font-size: 100%;
-                        }
+                            font-size: 70%;
+                        } //a
                     } //p
                 } //form-actions              
             } //form
@@ -146,17 +194,47 @@ body.jf-landing { //new class
         p {
             color: #7C7C7C;
         } //p
+
+        ul.logos {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                width: auto;
+                margin: 0 30px 0 0;
+                padding: 0 0 0 0;
+                list-style: none;
+                
+                a {
+                    outline: none;
+                
+                    img {
+                        width: auto;
+                        height: 24px;
+
+                        &.ugam-logo {
+                            height: 32px;
+                        } //img.ugam
+                    } //img
+                } //a
+            } //li
+        } //ul
     } //.bg-light-gray
 
     .block-www-footer-menus {
-        padding: 250px 0 0 0;
+        padding: 150px 0 0 0;
 
         .basement-copyright, 
         .basementLp-copyright {
             text-align: center;
-        }
 
-    }
+            a {
+                color: #ccc;
+            } //a
+        } //copyright
+    } //.block-www-footer-menus
 
 } // body.jf-landing
 
