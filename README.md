@@ -51,7 +51,7 @@ gulp watch
 
 ## environment urls:
 - **[dev]**     http://raks-landing-pages.sgel6.dev.jellyfish.tmp
-- **[build]**   N/A
+- **[build]**   http://raks-landing-pages.build.us.jellyfish.net/
 - **[stage]**   N/A
 - **[prod]**    N/A
 
